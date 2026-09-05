@@ -1,8 +1,5 @@
-import os
 import streamlit as st
 import pandas as pd
-from dotenv import load_dotenv
-from openai import OpenAI
 
 from components.styles import load_css
 
@@ -13,15 +10,6 @@ from components.styles import load_css
 
 load_css()
 
-load_dotenv()
-
-api_key = os.getenv("OPENAI_API_KEY")
-
-if not api_key:
-    st.error("OpenAI API key not found.")
-    st.stop()
-
-client = OpenAI(api_key=api_key)
 
 
 # ============================================================

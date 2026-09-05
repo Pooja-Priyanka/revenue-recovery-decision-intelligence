@@ -1,9 +1,5 @@
-import os
 import streamlit as st
 import pandas as pd
-
-from dotenv import load_dotenv
-from openai import OpenAI
 
 from components.styles import load_css
 
@@ -18,20 +14,6 @@ load_css()
 # ============================================================
 # OPENAI SETUP
 # ============================================================
-
-load_dotenv()
-
-# Try Streamlit Cloud secrets first, then fall back to local .env
-api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
-
-if not api_key:
-    st.error(
-        "OpenAI API key not configured. "
-        "Please add OPENAI_API_KEY to Streamlit secrets."
-    )
-    st.stop()
-
-client = OpenAI(api_key=api_key)
 
 
 # ============================================================
