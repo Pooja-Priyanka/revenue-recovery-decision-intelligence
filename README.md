@@ -594,6 +594,45 @@ streamlit run app/app.py
 ```
 
 ---
+## 🖥️ Dashboard Screenshots
+
+### 🏠 Overview
+
+The Overview dashboard provides a high-level view of customer risk, revenue exposure, and portfolio health.
+
+![Overview Dashboard](docs/screenshots/overview.png)
+
+---
+
+### 👥 Customer Risk Explorer
+
+The Customer Risk Explorer allows users to search and filter customers based on priority, churn probability, revenue at risk, and recommended retention actions.
+
+![Customer Risk Explorer](docs/screenshots/customers.png)
+
+---
+
+### 🎯 Decision Center
+
+The Decision Center converts churn predictions into prioritized retention decisions and recommended actions.
+
+![Decision Center](docs/screenshots/decision-center.png)
+
+---
+
+### 📈 Analytics
+
+The Analytics dashboard provides portfolio-level analysis of churn risk, revenue exposure, customer priorities, and retention actions.
+
+![Analytics Dashboard](docs/screenshots/analytics.png)
+
+---
+
+### 🤖 AI Assistant
+
+The AI Assistant provides grounded customer-level and business-level analysis using the project's risk and decision data.
+
+![AI Assistant](docs/screenshots/ai-assistant.png)
 
 ## 📌 Key Results
 
