@@ -21,11 +21,13 @@ load_css()
 
 load_dotenv()
 
-api_key = os.getenv("OPENAI_API_KEY")
+# Try Streamlit Cloud secrets first, then fall back to local .env
+api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
 
 if not api_key:
     st.error(
-        "OpenAI API key not found. Please check your .env file."
+        "OpenAI API key not configured. "
+        "Please add OPENAI_API_KEY to Streamlit secrets."
     )
     st.stop()
 
